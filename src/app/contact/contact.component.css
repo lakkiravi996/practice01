@@ -1,0 +1,50 @@
+.formdetails{
+    color:white;
+}
+.studentmain{
+    display: flex;
+    width:100%;
+}
+.studentForm{
+    width:30%;
+    height: 600px;
+    background-color: rgb(98, 157, 82);
+}
+.studentList{
+    width:70%;
+    height:600px;
+    background-color: blue;
+}
+.Ravi{
+    text-align: center;
+}
+label{
+    width:80px;
+    margin:10px;
+    color:white;
+}
+th{
+    background-color: rgb(236, 99, 13);
+    text-align: center;
+    height:25px;
+}
+td{
+    text-align: center;
+    border-bottom: 1px solid white;
+    padding:10px;
+}
+tr:nth-child(odd){
+    background-color: grey;
+}
+
+.formdetails{
+    text-align: center;
+}
+.userdetails{
+    width:100%;
+    text-align: center;
+    color:white;
+}
+tr{
+    border: 1px solid white;
+}

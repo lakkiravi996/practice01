@@ -1,0 +1,8 @@
+.usernames{
+    border:1px solid lightgray;
+    width:250px;
+    margin:15px;
+    display:inline-block;
+    text-align: center;
+    box-shadow: 0px 0px 8px whitesmoke,0px 0px 10px black;
+}

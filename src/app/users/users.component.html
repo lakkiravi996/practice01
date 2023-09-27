@@ -1,0 +1,11 @@
+ <div class="main">
+<div class="usernames" *ngFor="let user of users" >
+    <p>{{user.id}}</p>
+    <p>{{user.name.firstname}} {{user.name.lastname}}</p>
+    <p>{{user.phone}}</p>
+    <p>{{user.email}}</p>
+     <p>{{user.password}}</p> 
+    <button class="btn btn-primary">Buy now</button>
+    <button class="btn btn-warning">Details</button>
+</div>
+</div>

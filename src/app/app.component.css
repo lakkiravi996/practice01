@@ -1,0 +1,58 @@
+marquee{
+    color:red;
+}
+nav{
+
+    padding: 16px;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 0px 30px;
+}
+footer{
+    background-color:black;
+    position:fixed;
+    bottom:0px;
+    width:100%;
+    color:white;
+    text-align:center;
+}
+.cart-icon{
+    border:1px solid white;
+    border-radius: 50%;
+    float:right;
+    position:relative;
+    top:-8px;
+    right:5px;
+}
+.cart-count{
+    border:1px solid white;
+    border-radius: 50%;
+    color:red;
+    background-color: white;
+    width:21px;
+    height:21px;
+    display: block;
+    text-align: center;
+    float: right;
+    position: relative;
+    top:-12px;
+}
+button{
+    float:right;
+    position: relative;
+    top:-10px;
+}
+.modal-lenght{
+    width:200px;
+    height:300px;
+    display: block;
+}
+.main{
+    width:400px;
+    display: block;
+    height:500px;
+
+}
+

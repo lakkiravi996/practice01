@@ -1,0 +1,59 @@
+
+
+<nav class="bg-primary">
+  <a routerLink="Home">HOME</a>
+  <a routerLink="About">ABOUT</a>
+  <a routerLink="Gallary">Reactive Form</a>
+  <a routerLink="product">PRODUCTS</a>
+  <a routerLink="users">USERS</a>
+  <a routerLink="Contact">Template Form</a>
+  <a routerLink="login">Login</a>
+  <a routerLink="todos">Todos</a>
+
+  <img   data-bs-toggle="modal"
+  data-bs-target="#myModal" style="width:35px; height:35px;" class="cart-icon"   src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIoAAACKCAMAAABCWSJWAAAAY1BMVEX///8VFRcAAAASEhTz8/NycnIPDxHW1tYEBAj7+/szMzNWVlakpKSBgYLNzc1aWlqwsLDr6+vg4OCWlpbBwcFOTk46OjppaWl4eHi2traHh4chISKPj4+enp5DQ0MaGhsoKCkiXCUIAAAE30lEQVR4nO2aWXuqMBCGJcEYEFkFiiLl///KIzOxZmuPJfGhF3kvpyl8Zpkt7HaBQCAQCAQCgUAgEAj8bZLdoZQY8ng7LRkjCt24lZiKsEiGMjLX20gZSKTDSb6JlNyUEvF0mzVqCZfA1SLNJlLippDoYJJYlGyiRaH6AC1ko52rQuh2K6TRL9PC+61lLGSLFDZVW+u4k/P7ClFy2FrHnSpdDjQpt9axcOSLlH4XO+MspUHX8ml64V9CO1eXIEIBdYfMjpu/+qTOEyJw3XFJwf+KlN3FEqxXSnF1CWeUQnTAynQrtQ6GiWWpq6OMMSLeDgo1BEre1qr5zCBmDar10C9aPISPKzi5i2aFiMAnzVotVkq0n5+gn3QPqif8/ZoVUk+WatYDStHcWYUT656YipdqDipHa2KxUm57QkTcE7ADeBZy1qwgRfdaKPuqPQH3VeesZBe3tpWuIWRftbnKbC9NWohjo7sUkT5pO7S+LlKY5irGZSg5WoYa07qKEpdaNVYdszwfloLsVeMZ19JHglwTi68UyzaoQ2EC9aW4WI/gKhL0LDfVCLGJZOpQ3BXqyN0M//7hQ4p92sGD6pt5skxVTLxtlUeu3VW75InQN8q2JH5sIHngGaX4ydTRcbG2OD4pwJmzWbYdjxgjJ2UgyGOTn8I7iSDgcgWMwVQ1YjbAFBsU3uTkRcl9C7imT1Tf36tpXNMn6q3strVdfgXTI+Rq0HVH3EzjtIQN32vmdaTwJQX9GWsziRv64Ea2ga9hkzJshqPsa6sI383UiGtpvTSmLzzA6fPYz8NcW83OiPkOdHuKiy8f7tEXNuc9m06+MKMhBkifDZoUIo6Sa1tC32SGSOYpw34COREv5PTUkhBQY6IqW4LhBiStav54MjeGmdmX1hLACZFry29pzF1gHiqsXLQM0xEM//JyZEbHUKyGdFri1pbVONIbWWGJP1ia+9qod2qfaZPyYkql15yN5iXmNcQY8+m3wVkbWxKal0p7wCxecavo5awjmCvy4vTg0mPytP+ynCBS0flpuKQeM+wne6IHZ1BC9TaKYsEMzu9WEQdmDZT5vq04rJXCW+9XW2uleMuwn4C3UnbCa3D/dxUNhqF+/zuaN9xroQP7/As3ZnVq6x1sA16C+PZXqxgxoGwtY0Hk2r595xow176Xv9WLl1FvvJ4+4TUVmdMXaZt3XTqehMNlr3IPnh/v+KCh6ta4frL0oDwrSeZ1QYh5vxlO9qsjs/M9kMZZalh8zb0VGn2NxFzKt1cEVxvx6y0fjqJnUuZWsBdD0iwfJlBNI6/TUkNJxrHP+Git2EfiH3vYq3jm/F7eY6HKxQ6E1OWbmi+TKxBRkulXbE6USvmOTRN71x47+o+G1+i9pyGkPB4pqjGrv1DbPTdFmD8pX82jn+4yRuWibG+2G1yBUvDR2KmwErZP+yDH74P/To+4n43IWO3ifObS23RicdSz+8gBlFDPH/mJ7wFIV7TiMn3+JtDtRfzuigmrQx8XmDLVjN/rMc7EZf93zqIW/paJL/yo92TrTJSvR37oT2faSK9eBWjkr07JD9VnMkojKSnekMydrwQX5x7pfi4+S/4c+Z7P++Jxgsg89/87EtUlhZHp/m0VXJIP5ZC/8vgKRv6FT/sCgUAgEAgEAoFAIBD4Nf8AgOdDBGTuC80AAAAASUVORK5CYII=" alt="shopping cart">
+  <span class="cart-count">{{products.length}}</span>
+</nav>
+<router-outlet></router-outlet>
+
+
+<footer>
+  <p>copy right@2023</p>
+</footer>
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h4 class="modal-title">productDetails</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+  
+      <div class="modal-body">
+        <div class="mainProduct">
+          <h6 *ngIf="products.length == 0">Products Not Available</h6>
+          <div class="productDetails" *ngFor="let products of products">
+            <img width="100" height="100" src="{{products.image}}" alt="">
+            <div class="child">
+              <p class="title" title="{{products.title}}">{{products.title}}</p>
+              <p><b>$ {{products.price}}</b></p>
+              <p>Rating <button class="btn btn-primary">{{products.rating.rate}}</button> Rated<b> {{products.rating.count}}</b>
+              </p>
+              <p class="description" title="{{products.description}}"><b>Description:</b>{{products.description}}</p>
+              <!-- <button class="btn btn-danger" (click)="delete(product)">Delete</button> -->
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Modal footer -->
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-success">Total{{total}}</button>
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+
+      </div> -->
+
+    </div>
+  </div>

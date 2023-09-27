@@ -1,0 +1,13 @@
+
+<div class="main-background">
+<div class="main-content">
+<h3>Todo App</h3>
+<input type="text" name="todo" placeholder="please enter data" [(ngModel)]="todo"><span (click)="add()" class="plus">+</span>
+<div class="enter-data" *ngFor="let todo of todos;let i = index">
+    {{todo}} <i  class=" delete-icon fa-solid fa-trash" (click)="delete(i)"></i>
+
+
+</div>
+
+</div>
+</div>

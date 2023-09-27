@@ -1,0 +1,11 @@
+
+<div class="ravi">
+    <div class="products" *ngFor="let product of products">
+        <img src="{{product.image}}" alt="">
+    <p  class="title" title="{{product.title}}">{{product.title}}</p>
+    <p>$<b>{{product.price}}</b></p>
+     <p class="description"> <b>Description-</b>{{product.description}}</p>
+
+    <button type="button"  class="btn btn-success" (click)="addToCart(product)" >Add to card </button> <button type="button"  class="btn btn-success">Buy now</button>
+</div>
+</div>

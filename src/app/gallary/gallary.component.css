@@ -1,0 +1,59 @@
+.form{
+    width:32%;
+    height:650px;
+    background-color: rgba(26, 9, 72, 0.355);
+    text-align: center;
+    color:white;
+}
+.form-group{
+    display: flex;
+    width:100%;
+}
+.button{
+    text-align: center;
+}
+label{
+    width:80px;
+    padding:13px;
+}
+.heading{
+    text-align: center;
+    font-size: 30px;
+    color:white;
+    font-family: Goudy Stout;
+}
+input{
+    padding:5px;
+}
+
+.studentList{
+    width:70%;
+    height:650px;
+    background-color: rgb(15, 211, 70);
+    color:white;
+}
+.table-heading{
+    width:100%;
+}
+th{
+    background-color: brown;
+    border-bottom:1px solid white;
+    color:white;
+    padding:10px;
+    text-align: center;
+    font-family: Arial Black;
+}
+td{
+    border-bottom: 1px solid white;
+    padding:11px;
+    text-align: center;
+    font-family: Arial Black;
+}
+tr:nth-child(odd){
+    background-color: lightgrey;
+    color:brown;
+}
+tr:nth-child(even){
+    background-color: lightpink;
+    color:rgb(205, 15, 161);
+}
